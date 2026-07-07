@@ -1,5 +1,7 @@
 {
   "common": {
+    "enabled-masculine": "activé",
+    "disabled-masculine": "désactivé",
     "enabled-feminine": "activées",
     "disabled-feminine": "désactivées"
   },
@@ -9,8 +11,6 @@
     "access-denied": "Accès refusé.",
     "configuration": {
       "language": {
-        "choose-language": "Veuillez choisir une langue.\\nActuel: %s ``%s``",
-        "change-language": "La langue par défaut du bot sur le serveur est configurée sur: ``%s``.",
         "updated-title": "Langue mise à jour",
         "updated-description": "Nouvelle langue: `%s`."
       }
@@ -29,28 +29,17 @@
         "successfully": "Le bot a quitté le salon vocal."
       },
       "filters": {
-        "choose": "Veuillez sélectionner le filtre à utiliser",
-        "activate": "Le filtre ``%s`` est maintenant activé!\nLe changement peut prendre un certain temps. ⌛",
-        "change": "Modification du filtre en cours : de **%s** à ``%s``!\nLe changement peut prendre un certain temps. ⌛",
         "reset": "Tous les filtres ont été effacés !\nLe changement peut prendre un certain temps. ⌛",
         "title": "Filtre mis à jour",
         "active": "Filtre actif: `%s`.",
         "reset-short": "Les filtres ont été retirés."
       },
       "grab": {
-        "successfully": "Veuillez consulter vos [messages privés](%s) pour connaître les détails de la musique",
         "sent-title": "Envoyé en message privé",
         "sent-description": "Le lien de la musique en cours t'a été envoyé.",
-        "embed": {
-          "title": "Musique enregistrée",
-          "description": "[%s](%s) - ``%s``\nDemandé par %s\nChannel: %s",
-          "command": "Commande:"
-        }
+        "embed": {}
       },
       "history": {
-        "title": "Historique des musiques jouées sur %s",
-        "played-by": "Joué par %s",
-        "footer": "Utilisez les boutons ci-dessous pour naviguer entre les pages",
         "empty": "Aucun historique disponible.",
         "image-error": "Impossible de générer l'image de l'historique.",
         "not-requester": "Seule la personne qui a demandé l'historique peut changer de page."
@@ -62,8 +51,6 @@
         "not-found-short": "Paroles introuvables."
       },
       "now-playing": {
-        "title": "En cours de lecture",
-        "requested-by": "Demandé par: %s",
         "image-error": "Impossible de générer l'image now playing."
       },
       "pause": {
@@ -78,34 +65,22 @@
         "empty": "La playlist est vide."
       },
       "queue": {
-        "empty-queue": "Aucune musique dans la file d'attente.",
-        "title": "File d'attente : %s",
-        "remaining-music": "et %s autres...",
-        "footer": "Utilisez les boutons ci-dessous pour naviguer entre les pages",
         "image-error": "Impossible de générer l'image de la file d'attente.",
         "not-requester": "Seule la personne qui a demandé la file peut changer de page."
       },
       "radio": {
-        "placeholder": "Sélectionner une station de radio",
         "not-found": "Radio introuvable."
       },
-      "repeat-all": {
-        "successfully": "Répétition de la file d'attente: ``%s``"
-      },
+      "repeat-all": {},
       "repeat": {
-        "successfully": "Répétition de la musique: ``%s``",
-        "repeat-all-already-actif": "La répétition de l’ensemble des musiques est déjà activée",
-        "footer": "Utilisez les boutons ci-dessous pour naviguer entre les pages"
+        "title": "Repeat mis à jour",
+        "state": "État: `%s`."
       },
       "resume": {
         "title": "Lecture reprise",
         "successfully": "La musique vient de reprendre!"
       },
-      "search": {
-        "source-not-allowed": "La source que vous avez sélectionnée n'est pas valide. \n``(Source autorisée : Spotify/Deezer)``",
-        "title": "Résultats de la recherche pour : %s",
-        "music-result": "**%s**. [%s](%s) de **%s** [%s]"
-      },
+      "search": {},
       "seek": {
         "title": "Position mise à jour",
         "successfully": "La lecture a été déplacée de `%s`.",
@@ -134,7 +109,6 @@
       },
       "volume": {
         "title": "Volume mis à jour",
-        "limit": "Veuillez mettre le volume entre 1 et 100.",
         "successfully": "Nouveau volume: `%s`."
       }
     },
@@ -146,7 +120,6 @@
       "playlists": {
         "title": "Vous avez %s playlists sur votre profil spotify",
         "title-short": "Playlists Spotify",
-        "description": "**``%s``** - [``%s``](%s) (**%s musique(s)**)",
         "placeholder": "Veuillez sélectionner la playlist que vous souhaitez écouter",
         "option-description": "%s titre(s)",
         "fetch-error": "Impossible de récupérer les playlists Spotify de ce compte.",
@@ -164,59 +137,109 @@
     },
     "support": {
       "title": "❓ Besoin d'aide ?",
-      "description": "Besoin d'aide ou envie de suivre le projet ?\n%s",
-      "footer": "Nous vous remercions d'avoir choisi So' Music. Nous mettons tout en œuvre pour surpasser vos attentes et vous offrir une expérience exceptionnelle."
+      "description": "Besoin d'aide ou envie de suivre le projet ?\n%s"
     },
     "user": {
-      "language": {
-        "choose-language": "Veuillez choisir une langue.\nActuel: %s ``%s``",
-        "change-language": "La langue par défaut définie pour votre compte utilisateur est: ``%s``."
-      }
+      "language": {}
     }
   },
   "music": {
     "no-music-in-progress": "Il n'y a pas de lecture en cours sur ce serveur.",
-    "no-youtube-support": "Nous ne prenons plus en charge ``« Youtube »``, veuillez utiliser d'autres plateformes telles que Spotify, Soundcloud, Deezer... Ou essayez de mettre le titre de la musique.\\nRejoignez le serveur de support pour davantage d'informations.",
     "not-connected-to-voice-channel": "Vous devez être dans un channel vocal pour utiliser cette commande.",
     "not-connected-to-same-voice-channel": "Vous devez être connecté sur le même channel vocal que %s pour utiliser cette commande.",
     "not-connected-to-same-voice-channel-simple": "Tu dois être dans le même salon vocal que moi.",
-    "no-authorization-to-connect": "Aucune autorisation de connexion à %s.",
     "no-voice-permission": "Je n'ai pas les permissions vocales nécessaires.",
-    "playlist-loaded": {
-      "title": "Playlist ajouté à la file d'attente",
-      "description": "[%s](%s) (%s Musique(s)) - ``%s``\nPosition **#%s**, demandé par %s"
-    },
-    "start-track": {
-      "title": "Lecture en cours",
-      "description": "[%s](%s) - ``%s``\nDemandé par %s"
-    },
+    "playlist-loaded": {},
+    "start-track": {},
     "end-track": {
       "title": "Lecture terminé"
     },
     "audio-sources": {
       "default": {
-        "load": {
-          "title": "Ajouté à la file d'attente",
-          "description": "[%s](%s) - ``%s``\nPosition **#%s**, demandé par %s"
-        }
+        "load": {}
       },
       "radio": {
-        "load": {
-          "title": "Chargement de la radio en cours...",
-          "description": "**%s** - Demandé par %s"
-        }
+        "load": {}
       }
     }
   },
   "errors": {
-    "error-message": "Une erreur est survenue lors de la tentative de traitement de votre demande. Le problème a été transmis aux développeurs qui travailleront dessus rapidement.",
-    "error-message-exception": "Une erreur est survenue lors de la tentative de traitement de votre demande. Le problème a été transmis aux développeurs qui travailleront dessus rapidement.\n\n```%s```",
-    "bot-no-permission": "Je n'ai pas les permissions suivantes: %s.",
-    "guild-is-blacklist": "Il semble que votre serveur soit sur la **liste noire** ! Vous n'êtes pas autorisé à utiliser les commandes.\nVous pouvez contacter le support par mail à ``contact@somusic.xyz`` ou sur le [Serveur Support](%s).\n\nVous pouvez consulter la raison de cette sanction sur le [Site internet](https://www.somusic.xyz/blacklist/%s)",
-    "user-is-blacklist": "Il semble que vous soyez sur la **liste noire** ! Vous n'êtes pas autorisé à utiliser les commandes.\nVous pouvez contacter le support par mail à ``contact@somusic.xyz`` ou sur le [Serveur Support](%s).\n\nVous pouvez consulter la raison de votre sanction sur le [Site internet](https://www.somusic.xyz/blacklist/%s)",
     "user-dm-closed": "📬 Oups ! Impossible de t’envoyer un message en privé.\nAssure-toi que tes MP sont ouverts dans les paramètres de confidentialité du serveur."
   },
+  "images": {
+    "common": {
+      "live": "Live",
+      "page-short": "Page %s/%s",
+      "page-long": "Page %s sur %s",
+      "track-count": "%s titre(s)",
+      "unknown": "Inconnu",
+      "unknown-user": "Utilisateur inconnu",
+      "unknown-server": "Serveur inconnu",
+      "user-fallback": "Utilisateur %s"
+    },
+    "queue": {
+      "kicker": "FILE D'ATTENTE",
+      "current": "EN COURS",
+      "no-current": "Aucune musique en cours",
+      "stopped": "La lecture est arrêtée",
+      "empty": "Aucun titre en attente.",
+      "empty-short": "File vide",
+      "waiting-count": "%s titre(s) en attente",
+      "after-live": "Après le live",
+      "unknown-time": "Temps inconnu",
+      "now": "Maintenant",
+      "in-time": "Dans %s"
+    },
+    "history": {
+      "kicker": "HISTORIQUE MUSICAL",
+      "title": "Dernières écoutes",
+      "empty": "Aucun historique disponible.",
+      "requested-by": "Demandé par %s",
+      "no-plays": "Aucune écoute",
+      "play-count": "%s écoute(s)"
+    },
+    "now-playing": {
+      "kicker": "NOW PLAYING",
+      "requested-by": "Demandé par %s"
+    },
+    "play": {
+      "status": {
+        "started": "LECTURE LANCÉE",
+        "added": "MUSIQUE AJOUTÉE",
+        "recommendation": "RECOMMANDATION LANCÉE",
+        "ended": "LECTURE TERMINÉE",
+        "playlist": "PLAYLIST AJOUTÉE"
+      },
+      "metrics": {
+        "tracks": "Titres",
+        "queue": "File",
+        "requested-by": "Demandé par",
+        "duration": "Durée",
+        "position": "Position",
+        "type": "Type",
+        "based-on": "Basée sur",
+        "status": "Statut",
+        "volume": "Volume",
+        "channel": "Salon",
+        "added-tracks": "Titres ajoutés",
+        "first-track": "Premier titre"
+      },
+      "values": {
+        "waiting": "%s en attente",
+        "current": "En cours",
+        "suggestion": "Suggestion",
+        "last-play": "Dernière écoute",
+        "ended": "Terminée",
+        "next": "Prochaine",
+        "position-number": "Position #%s",
+        "server-volume": "Selon le serveur",
+        "playlist-loaded": "Playlist chargée avec succès."
+      }
+    }
+  },
   "pagination": {
+    "previous": "Précédent",
+    "next": "Suivant",
     "invalid-button": "Bouton de pagination invalide."
   }
 }

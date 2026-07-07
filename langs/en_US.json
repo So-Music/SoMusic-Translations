@@ -1,5 +1,7 @@
 {
   "common": {
+    "enabled-masculine": "enabled",
+    "disabled-masculine": "disabled",
     "enabled-feminine": "enabled",
     "disabled-feminine": "disabled"
   },
@@ -9,8 +11,6 @@
     "access-denied": "Access denied.",
     "configuration": {
       "language": {
-        "choose-language": "Please choose a language.\nCurrent: %s ``%s``",
-        "change-language": "The default bot language on the server is set to: ``%s``.",
         "updated-title": "Language updated",
         "updated-description": "New language: `%s`."
       }
@@ -29,28 +29,17 @@
         "successfully": "The bot left the voice channel."
       },
       "filters": {
-        "choose": "Please select the filter to use",
-        "activate": "The filter ``%s`` is now activated!\nThe change may take some time. ⌛",
-        "change": "Changing the filter: from **%s** to ``%s``!\nThe change may take some time. ⌛",
         "reset": "All filters have been cleared!\nThe change may take some time. ⌛",
         "title": "Filter updated",
         "active": "Active filter: `%s`.",
         "reset-short": "Filters have been removed."
       },
       "grab": {
-        "successfully": "Please check your [private messages](%s) for the music details.",
         "sent-title": "Sent by private message",
         "sent-description": "The current music link has been sent to you.",
-        "embed": {
-          "title": "Saved Music",
-          "description": "[%s](%s) - ``%s``\nRequested by %s\nChannel: %s",
-          "command": "Command:"
-        }
+        "embed": {}
       },
       "history": {
-        "title": "History of played music on %s",
-        "played-by": "Played by %s",
-        "footer": "Use the buttons below to navigate through pages",
         "empty": "No history available.",
         "image-error": "Unable to generate the history image.",
         "not-requester": "Only the person who requested the history can change pages."
@@ -62,8 +51,6 @@
         "not-found-short": "Lyrics not found."
       },
       "now-playing": {
-        "title": "Now Playing",
-        "requested-by": "Requested by: %s",
         "image-error": "Unable to generate the now playing image."
       },
       "pause": {
@@ -78,32 +65,22 @@
         "empty": "The playlist is empty."
       },
       "queue": {
-        "empty-queue": "No music in the queue.",
-        "title": "Queue : %s",
-        "remaining-music": "and %s more...",
         "image-error": "Unable to generate the queue image.",
         "not-requester": "Only the person who requested the queue can change pages."
       },
       "radio": {
-        "placeholder": "Select a radio station",
         "not-found": "Radio not found."
       },
-      "repeat-all": {
-        "successfully": "Queue repeat: ``%s``"
-      },
+      "repeat-all": {},
       "repeat": {
-        "successfully": "Music repeat: ``%s``",
-        "footer": "Use the buttons below to navigate through pages"
+        "title": "Repeat updated",
+        "state": "State: `%s`."
       },
       "resume": {
         "title": "Playback resumed",
         "successfully": "The music has resumed!"
       },
-      "search": {
-        "source-not-allowed": "The source you selected is not valid. \n``(Allowed sources: Spotify/Deezer)``",
-        "title": "Search results for: %s",
-        "music-result": "**%s**. [%s](%s) by **%s** [%s]"
-      },
+      "search": {},
       "seek": {
         "title": "Position updated",
         "successfully": "Playback moved by `%s`.",
@@ -132,7 +109,6 @@
       },
       "volume": {
         "title": "Volume updated",
-        "limit": "Please set the volume between 1 and 100.",
         "successfully": "New volume: `%s`."
       }
     },
@@ -144,7 +120,6 @@
       "playlists": {
         "title": "You have %s playlists on your Spotify profile",
         "title-short": "Spotify Playlists",
-        "description": "**``%s``** - [``%s``](%s) (**%s track(s)**)",
         "placeholder": "Please select the playlist you want to listen to",
         "option-description": "%s track(s)",
         "fetch-error": "Unable to retrieve Spotify playlists for this account.",
@@ -162,59 +137,109 @@
     },
     "support": {
       "title": "❓ Need help?",
-      "description": "Need help or want to follow the project?`n%s",
-      "footer": "Thank you for choosing So' Music. We strive to exceed your expectations and provide an exceptional experience."
+      "description": "Need help or want to follow the project?\n%s"
     },
     "user": {
-      "language": {
-        "choose-language": "Please choose a language.\nCurrent: %s ``%s``",
-        "change-language": "The default language set for your user account is: ``%s``."
-      }
+      "language": {}
     }
   },
   "music": {
     "no-music-in-progress": "There is no music currently playing on this server.",
-    "no-youtube-support": "We no longer support ``« Youtube »``, please use other platforms like Spotify, Soundcloud, Deezer... Or try entering the music title.\nJoin the support server for more information.",
     "not-connected-to-voice-channel": "You must be in a voice channel to use this command.",
     "not-connected-to-same-voice-channel": "You must be in the same voice channel as %s to use this command.",
     "not-connected-to-same-voice-channel-simple": "You must be in the same voice channel as me.",
-    "no-authorization-to-connect": "No permission to connect to %s.",
     "no-voice-permission": "I do not have the required voice permissions.",
-    "playlist-loaded": {
-      "title": "Playlist added to queue",
-      "description": "[%s](%s) (%s Track(s)) - ``%s``\nPosition **#%s**, requested by %s"
-    },
-    "start-track": {
-      "title": "Now Playing",
-      "description": "[%s](%s) - ``%s``\nRequested by %s"
-    },
+    "playlist-loaded": {},
+    "start-track": {},
     "end-track": {
       "title": "Playback finished"
     },
     "audio-sources": {
       "default": {
-        "load": {
-          "title": "Added to queue",
-          "description": "[%s](%s) - ``%s``\nPosition **#%s**, requested by %s"
-        }
+        "load": {}
       },
       "radio": {
-        "load": {
-          "title": "Loading radio...",
-          "description": "**%s** - Requested by %s"
-        }
+        "load": {}
       }
     }
   },
   "errors": {
-    "error-message": "An error occurred while processing your request. The issue has been reported to the developers who will work on it promptly.",
-    "error-message-exception": "An error occurred while processing your request. The issue has been reported to the developers who will work on it promptly.\n\n```%s```",
-    "bot-no-permission": "I do not have the following permissions: %s.",
-    "guild-is-blacklist": "It seems that your server is on the **blacklist**! You are not allowed to use the commands.\nYou can contact support via email at ``contact@somusic.xyz`` or on the [Support Server](%s).\n\nYou can check the reason for this sanction on the [website](https://www.somusic.xyz/blacklist/%s)",
-    "user-is-blacklist": "It seems that you are on the **blacklist**! You are not allowed to use the commands.\nYou can contact support via email at ``contact@somusic.xyz`` or on the [Support Server](%s).\n\nYou can check the reason for your sanction on the [website](https://www.somusic.xyz/blacklist/%s)",
     "user-dm-closed": "📬 Oops! I couldn’t send you a private message.\nPlease make sure your DMs are enabled in the server’s privacy settings."
   },
+  "images": {
+    "common": {
+      "live": "Live",
+      "page-short": "Page %s/%s",
+      "page-long": "Page %s of %s",
+      "track-count": "%s track(s)",
+      "unknown": "Unknown",
+      "unknown-user": "Unknown user",
+      "unknown-server": "Unknown server",
+      "user-fallback": "User %s"
+    },
+    "queue": {
+      "kicker": "QUEUE",
+      "current": "NOW PLAYING",
+      "no-current": "No music currently playing",
+      "stopped": "Playback is stopped",
+      "empty": "No tracks waiting.",
+      "empty-short": "Empty queue",
+      "waiting-count": "%s track(s) waiting",
+      "after-live": "After the live stream",
+      "unknown-time": "Unknown time",
+      "now": "Now",
+      "in-time": "In %s"
+    },
+    "history": {
+      "kicker": "MUSIC HISTORY",
+      "title": "Recent plays",
+      "empty": "No history available.",
+      "requested-by": "Requested by %s",
+      "no-plays": "No plays",
+      "play-count": "%s play(s)"
+    },
+    "now-playing": {
+      "kicker": "NOW PLAYING",
+      "requested-by": "Requested by %s"
+    },
+    "play": {
+      "status": {
+        "started": "PLAYBACK STARTED",
+        "added": "TRACK ADDED",
+        "recommendation": "RECOMMENDATION STARTED",
+        "ended": "PLAYBACK ENDED",
+        "playlist": "PLAYLIST ADDED"
+      },
+      "metrics": {
+        "tracks": "Tracks",
+        "queue": "Queue",
+        "requested-by": "Requested by",
+        "duration": "Duration",
+        "position": "Position",
+        "type": "Type",
+        "based-on": "Based on",
+        "status": "Status",
+        "volume": "Volume",
+        "channel": "Channel",
+        "added-tracks": "Tracks added",
+        "first-track": "First track"
+      },
+      "values": {
+        "waiting": "%s waiting",
+        "current": "Playing",
+        "suggestion": "Suggestion",
+        "last-play": "Last play",
+        "ended": "Ended",
+        "next": "Next",
+        "position-number": "Position #%s",
+        "server-volume": "Server default",
+        "playlist-loaded": "Playlist loaded successfully."
+      }
+    }
+  },
   "pagination": {
+    "previous": "Previous",
+    "next": "Next",
     "invalid-button": "Invalid pagination button."
   }
 }

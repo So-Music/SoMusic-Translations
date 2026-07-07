@@ -1,76 +1,74 @@
 # So' Music Translations
 
-Official localization repository for **So' Music**.
+Official localization repository for **So' Music**, the Discord music bot.
 
-This repository contains all translation files used by the So' Music Discord bot. It is maintained by the community and synchronized with the private bot repository.
+This repository contains the translation files used by the bot. It is maintained with community contributions and synchronized with the private bot repository.
 
-## 🌍 Contributing
+## Overview
 
-Everyone is welcome to contribute.
+Use this repository to:
 
-You can help by:
+- Add support for a new language.
+- Improve existing translations.
+- Fix grammar, spelling, or wording issues.
+- Update translations when new bot features are added.
 
-* Translating So' Music into a new language.
-* Improving existing translations.
-* Fixing grammar or spelling mistakes.
-* Updating translations when new features are added.
-
-All community contributions must go through the `update-translations` branch:
-
-https://github.com/So-Music/SoMusic-Translations/tree/update-translations
-
-Before opening a Pull Request:
-
-1. Create your branch from `update-translations`.
-2. Open your Pull Request targeting the `update-translations` branch.
-3. Do not target the `main` branch.
-
-Please read the **CONTRIBUTING.md** file before opening a Pull Request.
-
-## Repository structure
+## Repository Structure
 
 ```text
 langs/
 ├── en_US.json
 ├── fr_FR.json
 ├── de_DE.json
-├── ...
+└── ...
 ```
 
-Each file contains the complete translations for one locale.
+Each file contains the complete translation set for one locale. The English file, `langs/en_US.json`, is the reference file and defines the required keys.
 
-## Adding a language
+## Contributing
 
-1. Copy `en_US.json`.
-2. Rename it using the appropriate locale code (for example `it_IT.json` or `es_ES.json`).
+All community contributions must go through the [`update-translations`](https://github.com/So-Music/SoMusic-Translations/tree/update-translations) branch.
+
+Before opening a pull request:
+
+1. Create your branch from `update-translations`.
+2. Open your pull request against `update-translations`.
+3. Do not target the `main` branch.
+
+Read [CONTRIBUTING.md](CONTRIBUTING.md) before submitting changes.
+
+## Adding a Language
+
+1. Copy `langs/en_US.json`.
+2. Rename the copy using the appropriate locale code, for example `it_IT.json` or `es_ES.json`.
 3. Translate every value.
-4. Open a Pull Request.
+4. Open a pull request against `update-translations`.
 
-## Translation guidelines
+## Translation Guidelines
 
-* Never modify translation keys.
-* Translate only the values.
-* Preserve placeholders such as `%s`, `%d`, `%f`, etc.
-* Keep Markdown formatting intact.
-* Preserve line breaks (`\n`).
-* Do not modify URLs.
-* Keep emojis and Discord formatting.
+- Never modify translation keys.
+- Translate only the values.
+- Preserve placeholders such as `%s`, `%d`, and `%f`.
+- Keep Markdown formatting intact.
+- Preserve line breaks (`\n`).
+- Do not modify URLs.
+- Keep emojis and Discord formatting unchanged.
 
-## Automatic validation
+## Automatic Validation
 
-Every Pull Request is automatically checked to ensure:
+Every pull request is automatically checked to ensure:
 
-* Valid JSON syntax.
-* No missing translation keys.
-* No additional translation keys.
-* Placeholders are preserved.
+- JSON syntax is valid.
+- No translation keys are missing.
+- No additional translation keys have been added.
+- Placeholders are preserved.
 
-Pull Requests that fail validation cannot be merged.
+Pull requests that fail validation cannot be merged.
 
-## Reporting issues
+## Reporting Issues
 
 Found an incorrect translation?
 
-Open an Issue or submit a Pull Request.
+Open an issue or submit a pull request.
 
 We appreciate every contribution that helps make So' Music available to more communities around the world. ❤️

@@ -2,29 +2,29 @@
 
 Thank you for contributing to **So' Music**!
 
-Whether you're correcting a typo or translating the entire bot into another language, every contribution is appreciated.
+Whether you are correcting a typo or translating the entire bot into another language, every contribution helps improve the experience for So' Music users.
 
-## Before you start
+## Before You Start
 
-The English translation (`en_US.json`) is the reference for every language.
+The English translation file, `langs/en_US.json`, is the reference for every language.
 
-Every locale file must contain exactly the same translation keys.
+Every locale file must contain exactly the same translation keys as `langs/en_US.json`.
 
-All translation contributions must be made through the `update-translations` branch:
+All translation contributions must be made through the [`update-translations`](https://github.com/So-Music/SoMusic-Translations/tree/update-translations) branch.
 
-https://github.com/So-Music/SoMusic-Translations/tree/update-translations
+Before creating your pull request:
 
-Before creating your Pull Request:
+- Create your branch from `update-translations`.
+- Open your pull request against `update-translations`.
+- Do not target the `main` branch.
 
-* Create your branch from `update-translations`.
-* Open your Pull Request targeting the `update-translations` branch.
-* Do not target the `main` branch.
+## Contribution Rules
 
-## Rules
+### Translate Only Values
 
-### ✅ Translate only the values
+Translation keys identify bot messages and must remain unchanged.
 
-Example:
+Correct:
 
 ```json
 "music.now-playing.title": "Now Playing"
@@ -36,25 +36,23 @@ Example:
 "music.now-playing.title": "Lecture en cours"
 ```
 
-### ❌ Never change translation keys
-
 Incorrect:
 
 ```json
 "music.playing.title": "Lecture en cours"
 ```
 
-## Preserve placeholders
+### Preserve Placeholders
 
-Some translations contain placeholders.
+Some strings contain placeholders that are replaced by the bot at runtime.
 
-Examples:
+Common placeholders include:
 
-* `%s`
-* `%d`
-* `%f`
+- `%s`
+- `%d`
+- `%f`
 
-They **must remain unchanged**.
+Placeholders must remain unchanged and in the same order unless the language absolutely requires a different order.
 
 Correct:
 
@@ -74,19 +72,19 @@ Incorrect:
 Lecture en cours
 ```
 
-## Preserve formatting
+### Preserve Formatting
 
-Do not modify:
+Keep the following elements intact:
 
-* Markdown links
-* URLs
-* Line breaks (`\n`)
-* Discord code blocks
-* Inline code
-* Emojis
-* Discord mentions
+- Markdown links
+- URLs
+- Line breaks (`\n`)
+- Discord code blocks
+- Inline code
+- Emojis
+- Discord mentions
 
-Example:
+Correct:
 
 ```text
 Please join our [Support Server](https://...)
@@ -100,21 +98,30 @@ Rejoignez notre [serveur de support](https://...)
 
 Only the visible text should be translated.
 
-## Pull Requests
+## Adding a New Language
 
-Before submitting a Pull Request, make sure that:
+1. Copy `langs/en_US.json`.
+2. Rename the copy using the appropriate locale code, for example `it_IT.json` or `es_ES.json`.
+3. Translate every value.
+4. Keep all keys, placeholders, links, and formatting intact.
+5. Open a pull request against `update-translations`.
 
-* The JSON is valid.
-* Every translation key is present.
-* No additional keys have been added.
-* Placeholders are preserved.
-* Only translation files have been modified.
-* Your Pull Request targets the `update-translations` branch.
+## Pull Request Checklist
 
-Keep Pull Requests focused on a single language whenever possible.
+Before submitting a pull request, make sure that:
 
-## Need help?
+- The JSON is valid.
+- Every translation key is present.
+- No additional keys have been added.
+- Placeholders are preserved.
+- Markdown and Discord formatting are preserved.
+- Only translation files have been modified.
+- The pull request targets the `update-translations` branch.
 
-If you're unsure about a translation, feel free to open an Issue or start a Discussion.
+Keep pull requests focused on a single language whenever possible.
+
+## Need Help?
+
+If you are unsure about a translation, open an issue or start a discussion.
 
 Thank you for helping improve So' Music for users around the world! ❤️

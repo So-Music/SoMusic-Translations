@@ -59,7 +59,8 @@
       },
       "play": {
         "no-results": "No results found.",
-        "load-failed": "Unable to load music: %s"
+        "load-failed": "Unable to load music: %s",
+        "playback-error": "Unable to play this track."
       },
       "playlist": {
         "empty": "The playlist is empty."

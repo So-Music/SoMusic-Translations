@@ -59,7 +59,8 @@
       },
       "play": {
         "no-results": "Keine Ergebnisse gefunden.",
-        "load-failed": "Musik konnte nicht geladen werden: %s"
+        "load-failed": "Musik konnte nicht geladen werden: %s",
+        "playback-error": "Dieser Titel konnte nicht abgespielt werden."
       },
       "playlist": {
         "empty": "Die Playlist ist leer."

@@ -80,6 +80,7 @@
       "queue": {
         "empty-queue": "Aucune musique dans la file d'attente.",
         "title": "File d'attente : %s",
+        "remaining-music": "et %s autres...",
         "footer": "Utilisez les boutons ci-dessous pour naviguer entre les pages",
         "image-error": "Impossible de générer l'image de la file d'attente.",
         "not-requester": "Seule la personne qui a demandé la file peut changer de page."
@@ -93,7 +94,8 @@
       },
       "repeat": {
         "successfully": "Répétition de la musique: ``%s``",
-        "repeat-all-already-actif": "La répétition de l’ensemble des musiques est déjà activée"
+        "repeat-all-already-actif": "La répétition de l’ensemble des musiques est déjà activée",
+        "footer": "Utilisez les boutons ci-dessous pour naviguer entre les pages"
       },
       "resume": {
         "title": "Lecture reprise",

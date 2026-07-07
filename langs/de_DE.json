@@ -1,0 +1,220 @@
+{
+  "common": {
+    "enabled-feminine": "aktiviert",
+    "disabled-feminine": "deaktiviert"
+  },
+  "commands": {
+    "unknown-subcommand": "Unbekannter Unterbefehl.",
+    "invalid-context": "Unbekannter Befehl oder ungültiger Kontext.",
+    "access-denied": "Zugriff verweigert.",
+    "configuration": {
+      "language": {
+        "choose-language": "Bitte wählen Sie eine Sprache.\nAktuell: %s ``%s``",
+        "change-language": "Die Standardsprache des Bots auf dem Server ist eingestellt auf: ``%s``.",
+        "updated-title": "Sprache aktualisiert",
+        "updated-description": "Neue Sprache: `%s`."
+      }
+    },
+    "music": {
+      "autoplay": {
+        "title": "Autoplay aktualisiert",
+        "description": "Automatische Empfehlungen: `%s`."
+      },
+      "clear-queue": {
+        "title": "Warteschlange geleert",
+        "successfully": "Die Warteschlange wurde geleert."
+      },
+      "disconnect": {
+        "title": "Getrennt",
+        "successfully": "Der Bot hat den Sprachkanal verlassen."
+      },
+      "filters": {
+        "choose": "Bitte wählen Sie den zu verwendenden Filter",
+        "activate": "Der Filter ``%s`` ist jetzt aktiviert!\nDie Änderung kann einige Zeit dauern. ⌛",
+        "change": "Filter wird geändert: von **%s** zu ``%s``!\nDie Änderung kann einige Zeit dauern. ⌛",
+        "reset": "Alle Filter wurden zurückgesetzt!\nDie Änderung kann einige Zeit dauern. ⌛",
+        "title": "Filter aktualisiert",
+        "active": "Aktiver Filter: `%s`.",
+        "reset-short": "Filter wurden entfernt."
+      },
+      "grab": {
+        "successfully": "Bitte schaue in deine [privaten Nachrichten](%s), um die Details zur Musik zu sehen.",
+        "sent-title": "Per Direktnachricht gesendet",
+        "sent-description": "Der Link zur aktuellen Musik wurde dir gesendet.",
+        "embed": {
+          "title": "Gespeicherte Musik",
+          "description": "[%s](%s) – ``%s``\nAngefragt von %s\nKanal: %s",
+          "command": "Befehl:"
+        }
+      },
+      "history": {
+        "title": "Verlauf der abgespielten Musik auf %s",
+        "played-by": "Gespielt von %s",
+        "footer": "Verwenden Sie die Schaltflächen unten, um durch die Seiten zu navigieren",
+        "empty": "Kein Verlauf verfügbar.",
+        "image-error": "Das Verlaufsbild konnte nicht erstellt werden.",
+        "not-requester": "Nur die Person, die den Verlauf angefordert hat, kann die Seite wechseln."
+      },
+      "lyrics": {
+        "not-found": "Keine Liedtexte für **%s** gefunden.",
+        "title": "📜 Liedtext von %s - %s",
+        "title-short": "Liedtext",
+        "not-found-short": "Keine Liedtexte gefunden."
+      },
+      "now-playing": {
+        "title": "Jetzt läuft",
+        "requested-by": "Angefordert von: %s",
+        "image-error": "Das Now-Playing-Bild konnte nicht erstellt werden."
+      },
+      "pause": {
+        "title": "Wiedergabe pausiert",
+        "successfully": "Die Musik wurde pausiert!"
+      },
+      "play": {
+        "no-results": "Keine Ergebnisse gefunden.",
+        "load-failed": "Musik konnte nicht geladen werden: %s"
+      },
+      "playlist": {
+        "empty": "Die Playlist ist leer."
+      },
+      "queue": {
+        "empty-queue": "Keine Musik in der Warteschlange.",
+        "title": "Warteschlange : %s",
+        "remaining-music": "und %s weitere...",
+        "image-error": "Das Warteschlangenbild konnte nicht erstellt werden.",
+        "not-requester": "Nur die Person, die die Warteschlange angefordert hat, kann die Seite wechseln."
+      },
+      "radio": {
+        "placeholder": "Wählen Sie einen Radiosender",
+        "not-found": "Radio nicht gefunden."
+      },
+      "repeat-all": {
+        "successfully": "Wiederholung der Warteschlange: ``%s``"
+      },
+      "repeat": {
+        "successfully": "Musikwiederholung: ``%s``",
+        "footer": "Verwenden Sie die Schaltflächen unten, um durch die Seiten zu navigieren"
+      },
+      "resume": {
+        "title": "Wiedergabe fortgesetzt",
+        "successfully": "Die Musik wurde fortgesetzt!"
+      },
+      "search": {
+        "source-not-allowed": "Die von Ihnen gewählte Quelle ist nicht gültig. \n``(Erlaubte Quellen: Spotify/Deezer)``",
+        "title": "Suchergebnisse für: %s",
+        "music-result": "**%s**. [%s](%s) von **%s** [%s]"
+      },
+      "seek": {
+        "title": "Position aktualisiert",
+        "successfully": "Wiedergabe um `%s` verschoben.",
+        "missing-duration": "Gib mindestens eine Dauer in Minuten oder Sekunden an."
+      },
+      "shuffle": {
+        "title": "Warteschlange gemischt",
+        "success": "Die Warteschlange wurde gemischt!"
+      },
+      "skip": {
+        "title": "Titel übersprungen",
+        "successfully": "Weiter zum nächsten Eintrag in der Warteschlange."
+      },
+      "stop": {
+        "title": "Wiedergabe gestoppt",
+        "successfully": "Musik und Warteschlange wurden geleert."
+      },
+      "suggestion": {
+        "no-current": "Es läuft keine Musik, um eine Empfehlung zu erstellen.",
+        "unsupported-source": "Aus Radio oder Livestream kann keine Empfehlung erstellt werden.",
+        "started": "Empfehlung gestartet",
+        "added": "Empfehlung hinzugefügt",
+        "not-found": "Keine Empfehlung gefunden.",
+        "no-different": "Es wurde keine andere Empfehlung gefunden.",
+        "load-failed": "Empfehlung konnte nicht geladen werden: %s"
+      },
+      "volume": {
+        "title": "Lautstärke aktualisiert",
+        "limit": "Bitte stellen Sie die Lautstärke zwischen 1 und 100 ein.",
+        "successfully": "Neue Lautstärke: `%s`."
+      }
+    },
+    "spotify": {
+      "link": {
+        "title": "Spotify-Konto verknüpft",
+        "description": "Das Spotify-Konto [%s](%s) wurde erfolgreich mit **So' Music** verknüpft."
+      },
+      "playlists": {
+        "title": "Sie haben %s Playlists in Ihrem Spotify-Profil",
+        "title-short": "Spotify-Playlists",
+        "description": "**``%s``** - [``%s``](%s) (**%s Titel**)",
+        "placeholder": "Bitte wählen Sie die Playlist aus, die Sie anhören möchten",
+        "option-description": "%s Titel",
+        "fetch-error": "Spotify-Playlists konnten für dieses Konto nicht geladen werden.",
+        "not-requester": "Nur die Person, die die Playlists angefordert hat, kann dieses Menü verwenden.",
+        "play-error": "Diese Playlist konnte nicht gestartet werden."
+      },
+      "unlink": {
+        "title": "Spotify-Konto getrennt",
+        "successfully": "Ihr Spotify-Konto wurde erfolgreich von So' Music entfernt."
+      },
+      "disabled": "Die Spotify-API ist nicht konfiguriert.",
+      "no-playlist": "Es wurden keine öffentlichen Playlists zu Ihrem Spotify-Profil hinzugefügt.\nUm sie in So' Music abzuspielen, folgen Sie bitte den Anweisungen in der Dokumentation: [Dokumentationslink](https://support.spotify.com/us/article/playlist-publishing/?ref=related)",
+      "no-account-link": "Es ist derzeit kein Spotify-Konto mit So' Music verknüpft. Um Ihr Konto zu verbinden, verwenden Sie den Befehl: ``/spotify link 'ID'``.\nWeitere Informationen finden Sie in der Dokumentation: [Spotify-Befehl](https://docs.somusic.xyz/documentation/commandes/spotify-commands/).",
+      "no-account-fund": "Kein Spotify-Konto mit dieser ID ``%s`` wurde gefunden.\n"
+    },
+    "support": {
+      "title": "❓ Brauchen Sie Hilfe?",
+      "description": "Brauchst du Hilfe oder möchtest du das Projekt verfolgen?`n%s",
+      "footer": "Vielen Dank, dass Sie So' Music gewählt haben. Wir bemühen uns, Ihre Erwartungen zu übertreffen und Ihnen ein außergewöhnliches Erlebnis zu bieten."
+    },
+    "user": {
+      "language": {
+        "choose-language": "Bitte wählen Sie eine Sprache.\nAktuell: %s ``%s``",
+        "change-language": "Die Standardsprache für Ihr Benutzerkonto ist eingestellt auf: ``%s``."
+      }
+    }
+  },
+  "music": {
+    "no-music-in-progress": "Auf diesem Server wird derzeit keine Musik abgespielt.",
+    "no-youtube-support": "Wir unterstützen ``« Youtube »`` nicht mehr. Bitte nutzen Sie andere Plattformen wie Spotify, Soundcloud, Deezer... Oder versuchen Sie, den Musiktitel einzugeben.\nTreten Sie dem Support-Server bei, um weitere Informationen zu erhalten.",
+    "not-connected-to-voice-channel": "Sie müssen sich in einem Sprachkanal befinden, um diesen Befehl zu verwenden.",
+    "not-connected-to-same-voice-channel": "Sie müssen sich im selben Sprachkanal wie %s befinden, um diesen Befehl zu verwenden.",
+    "not-connected-to-same-voice-channel-simple": "Du musst im selben Sprachkanal sein wie ich.",
+    "no-authorization-to-connect": "Keine Berechtigung, sich mit %s zu verbinden.",
+    "no-voice-permission": "Ich habe nicht die erforderlichen Sprachberechtigungen.",
+    "playlist-loaded": {
+      "title": "Playlist zur Warteschlange hinzugefügt",
+      "description": "[%s](%s) (%s Titel) - ``%s``\nPosition **#%s**, angefordert von %s"
+    },
+    "start-track": {
+      "title": "Jetzt läuft",
+      "description": "[%s](%s) - ``%s``\nAngefordert von %s"
+    },
+    "end-track": {
+      "title": "Wiedergabe beendet"
+    },
+    "audio-sources": {
+      "default": {
+        "load": {
+          "title": "Zur Warteschlange hinzugefügt",
+          "description": "[%s](%s) - ``%s``\nPosition **#%s**, angefordert von %s"
+        }
+      },
+      "radio": {
+        "load": {
+          "title": "Radio wird geladen...",
+          "description": "**%s** - Angefordert von %s"
+        }
+      }
+    }
+  },
+  "errors": {
+    "error-message": "Ein Fehler ist aufgetreten, während Ihre Anfrage bearbeitet wurde. Das Problem wurde an die Entwickler weitergeleitet, die es schnellstmöglich beheben werden.",
+    "error-message-exception": "Ein Fehler ist aufgetreten, während Ihre Anfrage bearbeitet wurde. Das Problem wurde an die Entwickler weitergeleitet, die es schnellstmöglich beheben werden.\n\n```%s```",
+    "bot-no-permission": "Ich habe nicht die folgenden Berechtigungen: %s.",
+    "guild-is-blacklist": "Es scheint, dass euer Server auf der **Schwarzen Liste** steht! Ihr dürft die Befehle nicht verwenden.\nIhr könnt den Support per E-Mail unter ``contact@somusic.xyz`` oder auf dem [Support-Server](%s) kontaktieren.\n\nDen Grund für deine Sanktion kannst du auf der [Webseite](https://www.somusic.xyz/blacklist/%s) einsehen",
+    "user-is-blacklist": "Es scheint, dass du auf der **Schwarzen Liste** stehst! Du darfst die Befehle nicht verwenden.\nDu kannst den Support per E-Mail unter ``contact@somusic.xyz`` oder auf dem [Support-Server](%s) kontaktieren.\n\nDen Grund für diese Sanktion kannst du auf der [Webseite](https://www.somusic.xyz/blacklist/%s) einsehen",
+    "user-dm-closed": "📬 Hoppla! Ich konnte dir keine private Nachricht senden.\nBitte stelle sicher, dass deine Direktnachrichten in den Datenschutzeinstellungen des Servers aktiviert sind."
+  },
+  "pagination": {
+    "invalid-button": "Ungültiger Paginierungsbutton."
+  }
+}

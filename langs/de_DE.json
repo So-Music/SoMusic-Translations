@@ -17,7 +17,7 @@
     },
     "music": {
       "autoplay": {
-        "title": "Autoplay aktualisiert ",
+        "title": "Autoplay aktualisiert test",
         "description": "Automatische Empfehlungen: `%s`."
       },
       "clear-queue": {

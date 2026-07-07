@@ -15,6 +15,16 @@ You can help by:
 * Fixing grammar or spelling mistakes.
 * Updating translations when new features are added.
 
+All community contributions must go through the `update-translations` branch:
+
+https://github.com/So-Music/SoMusic-Translations/tree/update-translations
+
+Before opening a Pull Request:
+
+1. Create your branch from `update-translations`.
+2. Open your Pull Request targeting the `update-translations` branch.
+3. Do not target the `main` branch.
+
 Please read the **CONTRIBUTING.md** file before opening a Pull Request.
 
 ## Repository structure

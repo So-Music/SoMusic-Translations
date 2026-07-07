@@ -15,6 +15,7 @@
         "updated-description": "Neue Sprache: `%s`."
       }
     },
+    
     "music": {
       "autoplay": {
         "title": "Autoplay aktualisiert",

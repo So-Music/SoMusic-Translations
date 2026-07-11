@@ -84,8 +84,9 @@
       "search": {},
       "seek": {
         "title": "Position mise à jour",
-        "successfully": "La lecture a été déplacée de `%s`.",
-        "missing-duration": "Indique au moins une durée en minutes ou en secondes."
+        "successfully": "La lecture a été placée à `%s`.",
+        "missing-duration": "Indique une position en minutes ou en secondes.",
+        "invalid-position": "La position ne peut pas être négative."
       },
       "shuffle": {
         "title": "File mélangée",

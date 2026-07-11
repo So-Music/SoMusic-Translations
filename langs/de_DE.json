@@ -84,8 +84,9 @@
       "search": {},
       "seek": {
         "title": "Position aktualisiert",
-        "successfully": "Wiedergabe um `%s` verschoben.",
-        "missing-duration": "Gib mindestens eine Dauer in Minuten oder Sekunden an."
+        "successfully": "Wiedergabe auf `%s` gesetzt.",
+        "missing-duration": "Gib eine Position in Minuten oder Sekunden an.",
+        "invalid-position": "Die Position darf nicht negativ sein."
       },
       "shuffle": {
         "title": "Warteschlange gemischt",

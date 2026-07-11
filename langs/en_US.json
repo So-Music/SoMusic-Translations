@@ -84,8 +84,9 @@
       "search": {},
       "seek": {
         "title": "Position updated",
-        "successfully": "Playback moved by `%s`.",
-        "missing-duration": "Provide at least a duration in minutes or seconds."
+        "successfully": "Playback moved to `%s`.",
+        "missing-duration": "Provide a position in minutes or seconds.",
+        "invalid-position": "The position cannot be negative."
       },
       "shuffle": {
         "title": "Queue shuffled",
